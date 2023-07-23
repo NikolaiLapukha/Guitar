@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $('.customer__slider').slick({
+        arrows:false,
+        dots:true,
+        adaptiveHeight:true,
+        autoplay:true,
+        autoplaySpeed:2000,
+        asNavFor:".customer__image_slider"
+    });
+    $('.customer__image_slider').slick({
+        arrows:false,
+        fade:true,
+        asNavFor:".customer__slider"
+    });
+});
